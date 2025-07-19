@@ -2,18 +2,18 @@
 // @see https://github.com/antfu/vscode-ext-gen
 
 // Meta info
-export const publisher = "czhlin"
-export const name = "ext-name"
-export const version = "0.0.0"
-export const displayName = "ext-name"
+export const publisher = 'czhlin'
+export const name = 'ext-name'
+export const version = '0.0.0'
+export const displayName = 'ext-name'
 export const description = undefined
 export const extensionId = `${publisher}.${name}`
 
 /**
  * Type union of all commands
  */
-export type CommandKey = 
-  | "hello-world.showHelloWorld"
+export type CommandKey
+  = | 'hello-world.showHelloWorld'
 
 /**
  * Commands map registed by `czhlin.ext-name`
@@ -23,7 +23,7 @@ export const commands = {
    * Hello World: Show
    * @value `hello-world.showHelloWorld`
    */
-  helloWorldShowHelloWorld: "hello-world.showHelloWorld",
+  helloWorldShowHelloWorld: 'hello-world.showHelloWorld',
 } satisfies Record<string, CommandKey>
 
 /**
@@ -41,10 +41,9 @@ export interface ConfigShorthandTypeMap {
 }
 
 export interface ConfigItem<T extends keyof ConfigKeyTypeMap> {
-  key: T,
-  default: ConfigKeyTypeMap[T],
+  key: T
+  default: ConfigKeyTypeMap[T]
 }
-
 
 /**
  * Configs map registered by `czhlin.ext-name`
@@ -56,7 +55,7 @@ export interface ScopedConfigKeyTypeMap {
 }
 
 export const scopedConfigs = {
-  scope: "ext-name",
+  scope: 'ext-name',
   defaults: {
   } satisfies ScopedConfigKeyTypeMap,
 }
@@ -66,4 +65,3 @@ export interface NestedConfigs {
 
 export interface NestedScopedConfigs {
 }
-
