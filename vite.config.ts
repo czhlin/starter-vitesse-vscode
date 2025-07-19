@@ -40,6 +40,13 @@ export default defineConfig(({ mode }) => {
       VueMacros({
         plugins: {
           vue: Vue({
+            template: isVscode
+              ? {
+                  compilerOptions: {
+                    isCustomElement: (tag: string) => tag.startsWith('vscode-'),
+                  },
+                }
+              : undefined,
             include: [/\.vue$/, /\.md$/],
           }),
         },
@@ -159,7 +166,7 @@ export default defineConfig(({ mode }) => {
       isVscode && vscode({
         extension: { entry: 'ext/index.ts' },
         webview: {
-          csp: '<meta http-equiv="Content-Security-Policy" />',
+          csp: `<meta http-equiv="Content-Security-Policy" content="default-src 'none';  img-src 'self' data: base64;style-src {{cspSource}} 'unsafe-inline'; script-src 'nonce-{{nonce}}' 'unsafe-eval';">`,
         },
       }),
     ],

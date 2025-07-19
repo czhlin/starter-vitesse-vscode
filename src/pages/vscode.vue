@@ -43,40 +43,36 @@ vscodeApi?.on('hello3', (data: any) => {
   // eslint-disable-next-line no-console
   console.log('watch [hello3]: ', data)
 })
-const isVscode = import.meta.env.VITE_IS_VSCODE
 </script>
 
 <template>
   <main>
     <h1>Hello Vue!</h1>
-    {{ getWebViewUrl() }}
-    {{ isVscode }}
-    {{ vscodeApi }}
-    <n-button @click="onPostMessage">
+    <n-button type="primary" @click="onPostMessage">
       Post Message
     </n-button>
     <div style="margin-top: 8px">
-      <n-button @click="onPostAndReceive">
+      <n-button type="info" @click="onPostAndReceive">
         Post Message And Receive
       </n-button>
       <span v-if="receive" style="margin-left: 8px">{{ receive }}</span>
     </div>
     <div>
-      <n-input v-model="message">
+      <n-input v-model:value="message">
         Please enter a message
       </n-input>
       <div>Message is: {{ message }}</div>
     </div>
     <div>
-      <n-input v-model="state">
+      <n-input v-model:value="state">
         Please enter a state
       </n-input>
       <div>State is: {{ state }}</div>
       <div>
-        <n-button @click="onSetState">
+        <n-button type="tertiary" @click="onSetState">
           setState
         </n-button>
-        <n-button style="margin-left: 8px" @click="onGetState">
+        <n-button type="success" style="margin-left: 8px" @click="onGetState">
           getState
         </n-button>
       </div>
