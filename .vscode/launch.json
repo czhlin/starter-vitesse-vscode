@@ -16,7 +16,7 @@
       "outFiles": [
         "${workspaceFolder}/dist/extension/*.js"
       ],
-      "preLaunchTask": "npm: dev"
+      "preLaunchTask": "extension: dev"
     },
     {
       "name": "Preview Extension",
@@ -28,7 +28,7 @@
       "outFiles": [
         "${workspaceFolder}/dist/extension/*.js"
       ],
-      "preLaunchTask": "npm: build"
+      "preLaunchTask": "extension: build"
     }
   ]
 }

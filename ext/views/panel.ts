@@ -12,7 +12,7 @@ export class MainPanel {
 
     this._panel.onDidDispose(() => this.dispose(), null, this._disposables)
     this._panel.webview.html = WebviewHelper.setupHtml(this._panel.webview, context, {
-      path: 'panel',
+      path: 'vscode',
       query: 'type=panel&&title=Hello World',
       fragment: 'panelHash',
     })

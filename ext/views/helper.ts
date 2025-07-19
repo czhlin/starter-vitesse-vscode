@@ -21,7 +21,7 @@ export class WebviewHelper {
     const fragment = qs.parse(options?.fragment ?? '', parseOptions)
     const path = (options?.path ?? '').replace(/^\//, '')
     const serverUrl = () => {
-      let url = process.env.VITE_DEV_SERVER_URL ?? ''
+      let url = (process.env.VITE_DEV_SERVER_URL ?? '').replace(/\/$/, '')
       if (options?.path) {
         url = `${url}/${path}`
       }
@@ -49,6 +49,9 @@ export class WebviewHelper {
 
   public static setupHtml(webview: Webview, context: ExtensionContext, options?: WebviewOptions) {
     const { serverUrl, injectCode } = this.getUrl(options)
+    // eslint-disable-next-line no-console
+    console.log(52, 'hello')
+
     return __getWebviewHtml__({
       serverUrl,
       webview,
