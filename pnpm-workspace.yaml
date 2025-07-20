@@ -2,8 +2,8 @@ packages: []
 
 catalog:
   '@antfu/ni': ^25.0.0
+  '@czhlin/vite-plugin-vscode': ^4.2.3
   '@tomjs/tsconfig': ^2.0.0
-  '@tomjs/vite-plugin-vscode': v4.2.1
   '@tomjs/vscode-webview': ^2.0.2
   '@types/node': ^24.0.15
   '@types/vscode-webview': ^1.57.5

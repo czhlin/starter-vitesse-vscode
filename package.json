@@ -91,11 +91,11 @@
   "devDependencies": {
     "@antfu/eslint-config": "catalog:dev",
     "@antfu/ni": "catalog:",
+    "@czhlin/vite-plugin-vscode": "catalog:",
     "@iconify-json/carbon": "catalog:dev",
     "@intlify/unplugin-vue-i18n": "catalog:build",
     "@shikijs/markdown-it": "catalog:build",
     "@tomjs/tsconfig": "catalog:",
-    "@tomjs/vite-plugin-vscode": "catalog:",
     "@tomjs/vscode-webview": "catalog:",
     "@types/markdown-it-link-attributes": "catalog:types",
     "@types/node": "catalog:",

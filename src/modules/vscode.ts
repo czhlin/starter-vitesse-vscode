@@ -2,7 +2,7 @@ import type { UserModule } from '~/types'
 import { getWebViewUrl, isVscode } from '~/utils'
 // https://github.com/antfu/vite-plugin-pwa#automatic-reload-when-new-content-available
 export const install: UserModule = ({ isClient, router }) => {
-  if (!isClient || !isVscode)
+  if (!isClient || !isVscode())
     return
   let init = false
   router.beforeEach((to, _) => {
