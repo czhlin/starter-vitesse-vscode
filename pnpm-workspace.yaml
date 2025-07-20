@@ -2,7 +2,7 @@ packages: []
 
 catalog:
   '@antfu/ni': ^25.0.0
-  '@czhlin/vite-plugin-vscode': ^4.2.3
+  '@czhlin/vite-plugin-vscode': ^4.2.4
   '@tomjs/tsconfig': ^2.0.0
   '@tomjs/vscode-webview': ^2.0.2
   '@types/node': ^24.0.15
@@ -45,7 +45,7 @@ catalogs:
 
   dev:
     '@antfu/eslint-config': ^4.17.0
-    '@iconify-json/carbon': ^1.2.10
+    '@iconify-json/carbon': ^1.2.11
     '@vue-macros/volar': ^3.0.0-beta.17
     '@vue/test-utils': ^2.4.6
     cypress: ^14.5.2
