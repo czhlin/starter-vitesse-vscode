@@ -1,24 +1,9 @@
 packages: []
 
-catalog:
-  '@antfu/ni': ^25.0.0
-  '@czhlin/vite-plugin-vscode': ^4.2.4
-  '@tomjs/tsconfig': ^2.0.0
-  '@tomjs/vscode-webview': ^2.0.2
-  '@types/node': ^24.0.15
-  '@types/vscode-webview': ^1.57.5
-  '@vscode/vsce': ^3.6.0
-  bumpp: ^10.2.0
-  esno: ^4.8.0
-  naive-ui: ^2.42.0
-  ovsx: ^0.10.5
-  pnpm: ^10.13.1
-  query-string: ^9.2.2
-  reactive-vscode: ^0.3.1
-  vscode-ext-gen: ^1.1.0
 catalogs:
 
   build:
+    '@czhlin/vite-plugin-vscode': ^4.2.4
     '@intlify/unplugin-vue-i18n': ^6.0.8
     '@shikijs/markdown-it': ^3.8.1
     '@unocss/eslint-config': ^66.3.3
@@ -42,19 +27,27 @@ catalogs:
     vite-plugin-vue-layouts: ^0.11.0
     vite-ssg: ^28.0.0
     vite-ssg-sitemap: ^0.9.0
+    vscode-ext-gen: ^1.1.0
 
   dev:
     '@antfu/eslint-config': ^4.17.0
+    '@antfu/ni': ^25.0.0
     '@iconify-json/carbon': ^1.2.11
+    '@tomjs/tsconfig': ^2.0.0
+    '@vscode/vsce': ^3.6.0
     '@vue-macros/volar': ^3.0.0-beta.17
     '@vue/test-utils': ^2.4.6
+    bumpp: ^10.2.0
     cypress: ^14.5.2
     cypress-vite: ^1.6.0
     eslint: ^9.31.0
     eslint-plugin-cypress: ^5.1.0
     eslint-plugin-format: ^1.0.1
+    esno: ^4.8.0
     https-localhost: ^4.7.1
     lint-staged: ^16.1.2
+    ovsx: ^0.10.5
+    pnpm: ^10.13.1
     simple-git-hooks: ^2.13.0
     taze: ^19.1.0
     typescript: ^5.8.3
@@ -62,18 +55,24 @@ catalogs:
     vue-tsc: ^3.0.3
 
   frontend:
+    '@tomjs/vscode-webview': ^2.0.2
     '@unhead/vue': ^2.0.12
     '@unocss/reset': ^66.3.3
     '@vueuse/core': ^13.5.0
+    naive-ui: ^2.42.0
     nprogress: ^0.2.0
     pinia: ^3.0.3
+    query-string: ^9.2.2
+    reactive-vscode: ^0.3.1
     vue: ^3.5.17
     vue-i18n: ^11.1.10
     vue-router: ^4.5.1
 
   types:
     '@types/markdown-it-link-attributes': ^3.0.5
+    '@types/node': ^24.0.15
     '@types/nprogress': ^0.2.3
+    '@types/vscode-webview': ^1.57.5
 
 onlyBuiltDependencies:
   - cypress
